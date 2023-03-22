@@ -160,9 +160,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.zram:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.zram
 
-PRODUCT_ODM_PROPERTIES += \
-    debug.sf.disable_client_composition_cache=0
-
 # Gatekeeper
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0.vendor
@@ -182,9 +179,7 @@ PRODUCT_PACKAGES += \
     libbatching \
     libgeofencing \
     libgnss \
-    libsensorndkbridge \
-    libloc_net_iface \
-    liblocdiagiface 
+    libsensorndkbridge 
 
 PRODUCT_PACKAGES += \
     gnss@2.0-base.policy \
